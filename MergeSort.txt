@@ -1,0 +1,31 @@
+SORU 1:
+[16,21,11,8,12,22] -> Merge Sort
+
+Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
+
+
+ÇÖZÜM 1:
+Her dizi tek eleman olana kadar parçalanır
+[16,21,11] [8,12,22] 
+
+[16] [21,11]   [8] [12,22]
+
+[16] [21] [11]  [8] [12] [22]
+
+Parçalanan elemanlar kendi aralarında sıralı bir şekilde birleştirilir.
+[16] [11,21]  [8] [12,22]
+
+[11,16,21] [8,12,22]
+
+[8,11,12,16,21,22]
+
+
+SORU 2:Big-O gösterimini yazınız.
+
+ÇÖZÜM 2:
+Merge sort time complexity nlogn dir
+Bir şeyi sürekli olarak yarıya böldüğümüzde, bunu logaritmik sayıda yapacağı için (log n) olacaktır. 
+
+Birleştirme aşamasında her bir eleman karşılaştırılacağı için yani worst case e göre (n) olur.
+Bölme ve birleştirme aşamalarının toplamı ise O(n logn) şeklinde gerçekleşir. 
+
